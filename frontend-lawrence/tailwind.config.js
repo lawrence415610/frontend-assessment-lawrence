@@ -2,8 +2,9 @@
 export default {
   content: ['./src/**/*.{vue,ts,html}'],
   theme: {
-    extend: {},
+    fontFamily: {
+      sans: ['Graphik', 'sans-serif']
+    }
   },
-  plugins: [],
+  plugins: []
 }
-
