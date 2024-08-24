@@ -5,7 +5,6 @@ export const blogs: IBlog[] = [
     imageSource: '/images/content-1.jpg',
     description:
       'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit harum sit laboriosam minus repellendus praesentium culpa dolor ',
-    link: '#'
   },
   {
     id: 'blog-2',

@@ -4,17 +4,12 @@ import './BlogCard.css'
 defineProps<IBlog>()
 </script>
 <template>
-  <article
-    class="blog"
-  >
+  <article class="blog">
     <img class="blog__image" :src="imageSource" />
 
     <p class="blog__description">
       {{ description }}
     </p>
-
-    <a :href="link">
-      <button class="button--primary">Read More</button>
-    </a>
+    <button class="button--primary">Read More</button>
   </article>
 </template>
