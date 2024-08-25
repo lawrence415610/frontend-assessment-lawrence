@@ -28,6 +28,10 @@ defineProps<IBlog>()
   border-radius: 0.25rem;
 }
 
+.blog:hover{
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
 .blog__description {
   text-align: center;
   flex: 1 1 auto;

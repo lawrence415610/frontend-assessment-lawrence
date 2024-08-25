@@ -16,11 +16,12 @@ import { blogs } from '@/data/Blogs'
       Lorem ipsum dolor sit amet consectetur adipisicing elit.
     </p>
   </header>
-  <section class="flex justify-center">
+  <section class="flex justify-center mb-8">
     <div
       class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 md:p-8 p-4 justify-center w-[1400px]"
     >
       <BlogCard :key="blog.id" v-for="blog in blogs" v-bind="blog" />
     </div>
   </section>
+  <RouterLink class="button--display-sm" to="/">Home</RouterLink>
 </template>

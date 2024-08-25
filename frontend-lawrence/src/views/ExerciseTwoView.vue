@@ -46,7 +46,8 @@ onMounted(async () => {
 </script>
 
 <template>
-  <section class="flex justify-center items-center h-100">
+  <section class="flex justify-center mt-10">
     <TabAccordion :tabs="tabs" />
   </section>
+  <RouterLink class="button--display-sm" to="/">Home</RouterLink>
 </template>
