@@ -21,7 +21,7 @@ function addAnswerToTabs(tabs: Partial<ITab>[]): Partial<ITab>[] {
   const answerTab = {
     title: 'Bonus QA',
     content:
-      "<p>No way! Why the result of ('b' + 'a' + + 'a' + 'a').toLowerCase() is banana?</p> <p>Answer: I asked ChatGPT, he/she/it says the 'nan' part turn out to be not a number. Then I realized that the '+ a' in the middle may be translated by Javascript meaning turning a string 'a' to a number, which is not a number. Then the string becomes baNANa and finally all turn to lowercase. EUREKA! </p>"
+      "<p>No way! Why the result of ('b' + 'a' + + 'a' + 'a').toLowerCase() is banana?</p> <p>Answer: I asked ChatGPT, it says the 'nan' part turn out to be not a number. Then I realized that the '+ a' in the middle may be translated by Javascript meaning turning a string 'a' to a number, which is not a number. Then the string becomes baNANa and finally all turn to lowercase. EUREKA! </p>"
   }
   tabs.unshift(answerTab)
   return tabs
@@ -46,7 +46,7 @@ onMounted(async () => {
 </script>
 
 <template>
-  <section class="flex justify-center items-center h-[50vh]">
+  <section class="flex justify-center items-center h-100">
     <TabAccordion :tabs="tabs" />
   </section>
 </template>

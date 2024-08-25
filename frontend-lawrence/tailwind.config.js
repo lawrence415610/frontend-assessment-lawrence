@@ -3,7 +3,7 @@ export default {
   content: ['./src/**/*.{vue,ts,html}'],
   theme: {
     fontFamily: {
-      sans: ['Graphik', 'sans-serif']
+      sans: ['Roboto', 'sans-serif']
     }
   },
   plugins: []
